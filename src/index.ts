@@ -1,6 +1,6 @@
 import http from "http";
 
-const port = process.env.PING_LISTEN_PORT || 3000;
+const port = process.env.PING_LISTEN_PORT;
 
 const server = http.createServer((req, res) => {
   if (req.method === "GET" && req.url === "/ping") {
